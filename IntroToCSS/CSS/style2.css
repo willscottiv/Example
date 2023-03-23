@@ -1,0 +1,31 @@
+#rounded {
+    color: cadetblue;
+    border-color: cadetblue;
+    border-radius: 15px;
+    height: 25px;
+    width: 150px;
+    border: 2px solid;
+}
+
+#circle {
+    background-color:lightseagreen;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    height: 45px;
+    width: 45px;
+    font-size: 30px;
+}
+
+#rectangle {
+    box-shadow: 5px 5px 5px black;
+    height: 35px;
+    width: 175px;
+    color: white;
+    background-color: blue;
+
+}
+
+div {
+    margin: 20px;
+}

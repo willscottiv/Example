@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style9.css" />
+  </head>
+  <body>
+    <div class="container"><header>
+        <ul class="links">
+            <li>Profile</li>
+            <li>Home</li>
+            <li>My Profile</li>
+            <li>Find Connections</li>
+        </ul>
+          <button id="sign-out">Sign Out</button>
+      </header>
+      <main>
+        <div class="col-left">
+            <div class="profile">
+                <div class="top-profile">
+                    <img src="user-circle.png" class="user-circle" alt="user-circle" width="100"/>
+                </div>
+                <div class="bottom-profile">
+                 <h1 id="name">Will Scott</h1>
+                    <h3>
+                    <img src="map-marker.png" alt="map-marker" width="15" /> Mission Viejo
+                    </h3>
+                <br />
+                    <p>Future Coder | Husband | Father|</p>
+                    <p>Ready to begin a new carrer!</p>
+                    <br />
+                    <p>
+                    <img src="gear.png" width="25" alt="gear" />
+                    <a href="#" onclick="change()">edit profile</a>
+                    </p>
+                </div>
+            </div>
+            <div class="education">
+                <div class="top-education">
+                    <p>Education</p>
+                </div>
+                <div class="bottom-education">
+                    <p id="education-first"> Coding Dojo - Full Stack Bootcamp</p>
+                    <p id="education-second">March 2023 - December 2023 </p>
+                    <p id="education-third">Triple black belit in Python, Mern, and C#</p>
+                </div>
+            </div>
+        </div>
+            <div class="col-right">
+                <div class="requests">
+                <div class="requests-top">
+                    <button id="two-button">2</button>
+                    <p>Connection Requests</p>
+                </div>
+                <div class="requests-bottom">
+                    <div class="req-line">
+                        <div class="pic-name">
+                          <img src="user-circle.png" alt="user-circle-small" width="25">
+                            <p class="rmv">Todd E</p>
+                        </div>
+                        <div class="buttons">
+                            <button class="check-button" onclick="remove()">&#x2713</button>
+                            <button class="x-button" onclick="remove()">X</button>
+                        </div>
+                    </div>
+                </div>
+                    <div class="req-line">
+                        <div class="pic-name">
+                            <img src="user-circle.png" alt="user-circle-small" width="25">
+                            <p class="rmv">Phill K</p>
+                        </div>
+                           <div class="buttons">
+                            <button class="check-button" onclick="remove()">&#x2713</button>
+                            <button class="x-button" onclick="remove()">X</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="connections">
+                    <div class="connections-top">
+                        <button id="five-button">500</button>
+                        <p>Your Connections</p>
+                    </div>
+                    <div class="connections-middle">
+                        <div class="req-line">
+                            <div class="pic-name">
+                              <img src="user-circle.png" alt="user-circle-small" width="25">
+                                <p>Adrien D</p>
+                            </div>
+                        </div>
+                        <div class="req-line">
+                            <div class="pic-name">
+                                <img src="user-circle.png" alt="user-circle-small" width="25">
+                                <p>Anne J</p>
+                            </div>
+                       </div>
+                        <div class="req-line">
+                            <div class="pic-name">
+                                <img src="user-circle.png" alt="user-circle-small" width="25">
+                                <p>Alayne T</p>
+                            </div>
+                       </div>
+                        <div class="req-line">
+                            <div class="pic-name">
+                                <img src="user-circle.png" alt="user-circle-small" width="25">
+                                <p>Arry Y</p>
+                            </div>
+                       </div>
+                    </div>
+                     <div class="connections-bottom">
+                        <a href="#"> View More</a>
+                     </div>
+                </div>
+            </div>
+
+    </main>
+</div>
+<script src="profile.js"></script>
+  </body>
+</html>
+
+
+<!-- css code
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+ }
+
+ .container{
+     width: 1000px;
+     margin: 0 auto;
+     border: 3px solid grey;
+
+ }
+
+ .profile {
+    width: 400px;
+    height: 450px;
+    border: 3px solid grey;
+    display: flex;
+    flex-direction:column;
+
+ }
+
+ .top-profile {
+     background-color: rebeccapurple;
+     width:inherit;
+     height: 100px;
+
+
+ }
+
+ .bottom-profile {
+     width: inherit;
+     padding: 50px;
+     display: flex;
+     flex-direction: column;
+
+
+
+ }
+
+ .user-circle {
+    position: relative;
+    top: 0px;
+    padding: 50px;
+ }
+
+ header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    background-color: black;
+    color:white;
+    border: none;
+ }
+
+ main{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    height: 750px;
+    justify-content:space-evenly;
+    /* align-items:flex-start; */
+    margin: 20px;
+ }
+
+ .links {
+    display: flex;
+    width: 50%;
+    border: none;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ #sign-out {
+    width: 75px;
+    height: 25px;
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+ }
+
+
+ .col-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+ }
+
+.education {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    border: 3px solid grey;
+
+}
+
+.top-education {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+
+}
+
+.bottom-education {
+    display: flex;
+    flex-direction: column;
+}
+
+#education-first {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#education-second {
+    font-size: 17px;
+    color:silver;
+    font-weight: bold;
+
+}
+
+#education-third {
+font-size: 20px;
+}
+
+#two-button {
+  border-radius: 50%;
+  width: 25px;
+  background-color: darkgray;
+  margin: 5px;
+  font-weight: bold;
+
+}
+
+.check-button {
+    border-radius: 50%;
+    width: 25px;
+    background-color: darkgrey;
+    color: white;
+
+}
+
+.x-button{
+    border-radius: 50%;
+    width: 25px;
+    background-color: darkgrey;
+    color: white;
+
+}
+
+.col-right {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: flex-start;
+
+}
+
+.requests {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+    border: 3px solid grey;
+    position: fixed;
+    top: 100px;
+}
+
+.requests-top {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+
+}
+
+.requests-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.req-line {
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.pic-name {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+}
+
+.connections {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border: 3px solid grey;
+}
+
+.connections-top {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+
+}
+
+.requests-middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.connections-bottom {
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid grey;
+    width: inherit;
+    height: 10px;
+}
+
+#five-button {
+    border-radius: 50%;
+    width: 25px;
+    background-color: darkgray;
+    margin: 5px;
+    font-weight: bold;
+
+  } -->

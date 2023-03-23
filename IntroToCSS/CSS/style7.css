@@ -1,0 +1,17 @@
+.row {
+   display: flex;
+}
+
+.col-3 {
+    flex: 3;
+    padding: 20px;
+    margin: 10px;
+    background-color: rebeccapurple;
+}
+
+.col-2 {
+    flex: 2;
+    padding: 20px;
+    margin: 10px;
+    background-color:blue;
+}

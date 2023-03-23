@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="stylebuttonclicker.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>Dojonary</h1>
+            <form>
+                <input type="text" id="search" placeholder="Search">
+    </form>
+            <button class="login-button" onclick="changeText(this)">Login</button>
+        </nav>
+        <main>
+           <div class="col-left">
+                <div class="top-main">
+                    <div class="top-left-main">
+                        <h1>ninja</h1>
+                        <p>noun</p>
+                        <p>Plural: <span><em>ninjas</em></span></p>
+                        <button class="like-button" onclick="liked (this)">13 likes</button>
+                    </div>
+                    <div class="top-right-main">
+                        <p>A practitioner skilled in the</p>
+                        <p> <a href="#">Japanese</a> art of <a href="#">ninjitsu</a></p>
+                    </div>
+                </div>
+                <div class="bottom-main">
+                    <div class="bottom-left-main">
+                        <h1>ninja</h1>
+                        <p>noun</p>
+                        <p>Plural: <span><em>ninjas</em></span></p>
+                        <button class="like-button" onclick="liked (this)">37 likes</button>
+                    </div>
+                    <div class="bottom-right-main">
+                        <p>A <a href="#" >programmer </a>who breaks</p>
+                        <p>down problems with<a href="#"> Zen</a>-like</p>
+                        <p>focus</p>
+                    </div>
+                </div>
+           </div>
+           <div class="col-right">
+                <div class="right-box">
+                    <p class="right-box-font">Dojonary is</p>
+                    <p class="right-box-font">defined by <span><b>YOU</b></span></p>
+                    <button class="def-button" onclick="remove(this)">Add Definition</button>
+                </div>
+           </div>
+
+        </main>
+    </div>
+  <script src="scriptbuttonclicker.js"></script>
+</body>
+</html>

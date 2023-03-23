@@ -1,0 +1,36 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family:'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    border: 5px solid grey;
+
+}
+
+.top {
+    background-color: rebeccapurple;
+    width: 1000px;
+    height: 100px;
+
+
+}
+
+.bottom {
+    width: inherit;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.user-circle {
+   position: relative;
+   top: 0px;
+   padding: 50px;
+}

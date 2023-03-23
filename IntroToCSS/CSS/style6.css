@@ -1,0 +1,25 @@
+.nav {
+    background-color:dimgray;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+.btn {
+    color: aliceblue;
+    background-color: cadetblue;
+    box-shadow: 5px 5px 5px black;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin: 20px;
+
+
+}

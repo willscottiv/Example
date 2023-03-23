@@ -1,0 +1,165 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+.container {
+   width: 1000px;
+   margin: 0px auto;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+
+}
+
+nav {
+   width: 700px;
+   height: 50px;
+   background-color: darkgrey;
+   border: none;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px;
+
+}
+#search {
+   border: 2px solid black;
+
+}
+
+.login-button {
+   background-color: blue;
+   border: 2px solid black;
+   color: white;
+   box-shadow: 10px 5px 5px black;
+   width: 65px;
+
+}
+
+main {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   margin: 20px;
+
+}
+
+.col-left {
+   display: flex;
+   flex-direction: column;
+
+
+
+}
+
+.top-main{
+   border: 2px solid black;
+   display: flex;
+   align-items: center;
+   margin: 20px;
+
+
+}
+
+.top-left-main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 20px;
+
+}
+
+p {
+   font-weight:bold
+}
+
+h1 {
+   font-weight: bold;
+   font-size: 35px;
+}
+
+.like-button {
+   border: 2px solid black;
+   background-color: darkgoldenrod;
+   color: black;
+   box-shadow: 10px 5px 5px black;
+   width: 80px;
+   height: 25px;
+   margin: 20px;
+}
+
+.top-right-main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 20px;
+
+
+
+}
+
+.bottom-main {
+   border: 2px solid black;
+   display: flex;
+   align-items: center;
+   margin: 20px;
+
+}
+
+.bottom-left-main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 20px;
+
+
+
+}
+
+.bottom-right-main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 20px;
+
+
+
+
+}
+
+.col-right {
+   display: flex;
+   flex-direction: column;
+
+}
+
+.right-box {
+   border: 2px solid black;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 20px;
+   padding: 20px;
+
+
+
+}
+
+.right-box-font {
+   font-weight: bold;
+   font-size: 25px;
+}
+
+.def-button {
+   border: 2px solid black;
+   background-color: olivedrab;
+   font-weight: bolder;
+   color: black;
+   box-shadow: 10px 5px 5px black;
+   width: 150px;
+   height: 25px;
+   margin: 20px;
+
+}
